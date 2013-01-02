@@ -19,7 +19,7 @@ Chapter 2 LogExample Maven Version
 6. access to [http://localhost:8080/jboss-log-example/logger](http://localhost:8080/jboss-log-example/logger)
 7. Check console or server.log
 
-## Undeploy and System-Property Remove
+## Undeploy and Remove System-Property
 
 1. Make sure you have started the JBoss Server
 2. cd jboss-log-example
