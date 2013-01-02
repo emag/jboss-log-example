@@ -39,7 +39,7 @@ The mechanism of JBoss LogManager is different by JBoss Version. That's why ther
 10:52:03,399 INFO  [org.emamotor.jboss.as7.jbosslogexample.LoggerServlet] (http--127.0.0.1-8080-1) System variable myproperty=dummyvalue
 </pre>
 
-### EAP 6.0 (Based on AS 7.1.2)
+### EAP 6.0.0 (Based on AS 7.1.2)
 
 <pre>
 11:09:02,586 INFO  [stdout] (http-/127.0.0.1:8080-1) FATAL [http-/127.0.0.1:8080-1] (LoggerServlet.java:36) - System variable myproperty=dummyvalue
