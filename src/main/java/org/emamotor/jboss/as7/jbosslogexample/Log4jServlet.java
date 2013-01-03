@@ -41,7 +41,7 @@ public class Log4jServlet extends HttpServlet {
         LOGGER.debug(msg);
         LOGGER.trace(msg);
         
-        response.getWriter().println("The Servlet just logged.");
+        response.getWriter().println("The Log4Servlet just logged.");
         
     }
 
