@@ -16,7 +16,7 @@ Chapter 2 LogExample Maven Version
 3. git clone https://github.com/emag/jboss-log-example.git
 4. cd jboss-log-example
 5. mvn clean package jboss-as:deploy
-6. access to [http://localhost:8080/jboss-log-example/logger](http://localhost:8080/jboss-log-example/logger)
+6. access to [http://localhost:8080/jboss-log-example/log4j](http://localhost:8080/jboss-log-example/log4j)
 7. Check console or server.log
 
 ## Undeploy and Remove System-Property
@@ -56,4 +56,9 @@ The mechanism of JBoss LogManager is different by JBoss Version. That's why ther
 11:09:02,617 INFO  [stdout] (http-/127.0.0.1:8080-1) TRACE [http-/127.0.0.1:8080-1] (LoggerServlet.java:41) - System variable myproperty=dummyvalue
 </pre>
 
-If you use JBoss AS 7.1.2 or later, your apps should NOT have its own logging lib(such as log4j).
+If you use JBoss AS 7.1.2 or later, your apps should NOT have its own logging lib(such as log4j) and remove log4j.xml|properties.
+Or, prevent the server from automatically adding log4j dependencies.
+
+@See
+
+https://access.redhat.com/knowledge/docs/en-US/JBoss_Enterprise_Application_Platform/6/html-single/Migration_Guide/index.html#sect-Logging_Changes
