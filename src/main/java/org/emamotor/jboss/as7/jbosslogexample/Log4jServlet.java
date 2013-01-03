@@ -13,17 +13,17 @@ import org.apache.log4j.Logger;
 /**
  * Servlet implementation class LoggerServlet
  */
-@WebServlet("/logger")
-public class LoggerServlet extends HttpServlet {
+@WebServlet("/log4j")
+public class Log4jServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
-    private static final Logger LOGGER = Logger.getLogger(LoggerServlet.class);
+    private static final Logger LOGGER = Logger.getLogger(Log4jServlet.class);
     
     /**
      * Default constructor.
      */
-    public LoggerServlet() {
+    public Log4jServlet() {
         // TODO Auto-generated constructor stub
     }
 
