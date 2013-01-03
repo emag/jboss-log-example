@@ -56,9 +56,8 @@ The mechanism of JBoss LogManager is different by JBoss Version. That's why ther
 11:09:02,617 INFO  [stdout] (http-/127.0.0.1:8080-1) TRACE [http-/127.0.0.1:8080-1] (LoggerServlet.java:41) - System variable myproperty=dummyvalue
 </pre>
 
-If you use JBoss AS 7.1.2 or later, your apps should NOT have its own logging lib(such as log4j) and remove log4j.xml|properties.
-Or, prevent the server from automatically adding log4j dependencies.
+If you use JBoss AS 7.1.2 or later, your apps should NOT have its own logging lib(such as log4j) and remove log4j.xml|properties. In case you don't want to change your code, prevent the server from automatically adding log4j dependencies.
 
 @See
-
+----
 https://access.redhat.com/knowledge/docs/en-US/JBoss_Enterprise_Application_Platform/6/html-single/Migration_Guide/index.html#sect-Logging_Changes
