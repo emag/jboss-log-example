@@ -32,12 +32,15 @@ public class Log4jServlet extends HttpServlet {
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         
-        LOGGER.fatal("System variable myproperty=" + System.getProperty("myproperty"));
-        LOGGER.error("System variable myproperty=" + System.getProperty("myproperty"));
-        LOGGER.warn("System variable myproperty=" + System.getProperty("myproperty"));
-        LOGGER.info("System variable myproperty=" + System.getProperty("myproperty"));
-        LOGGER.debug("System variable myproperty=" + System.getProperty("myproperty"));
-        LOGGER.trace("System variable myproperty=" + System.getProperty("myproperty"));
+        String msg = "System variable myproperty=" + System.getProperty("myproperty");
+
+        LOGGER.fatal(msg);
+        LOGGER.error(msg);
+        LOGGER.warn(msg);
+        LOGGER.info(msg);
+        LOGGER.debug(msg);
+        LOGGER.trace(msg);
+        
         response.getWriter().println("The Servlet just logged.");
         
     }
