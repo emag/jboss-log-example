@@ -7,6 +7,7 @@ Chapter 2 LogExample Maven Version
 ## Requirements
 
 * JDK6 or later
+* Maven 3
 * JBoss AS7.1 or EAP6.0
 
 ## Usage
